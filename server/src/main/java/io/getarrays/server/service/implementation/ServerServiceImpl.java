@@ -22,7 +22,7 @@ import static java.lang.Boolean.TRUE;
 @Transactional
 @Slf4j // adds logs for console
 @RequiredArgsConstructor // lombok's dependency indjection for ServerRepo
-public class SeverServiceImpl implements ServerService {
+public class ServerServiceImpl implements ServerService {
     private final ServerRepo serverRepo;
     @Override
     public Server create(Server server) {
