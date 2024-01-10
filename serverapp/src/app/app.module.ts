@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServerService } from './service/server.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -10,4 +11,8 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private serverService: ServerService) {}
+
+  ngOnInit(): void {}
+}
