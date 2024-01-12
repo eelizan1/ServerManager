@@ -78,6 +78,13 @@ export class ServerService {
       catchError(this.handleError) // 12. Catches any errors that occur and handles them.
     );
 
+  delete$ = (serverId: number) =>
+    <Observable<CustomResponse>>(
+      this.http
+        .delete<CustomResponse>(`${this.apiUrl}/server/delete/${serverId}`)
+        .pipe(tap(console.log), catchError(this.handleError))
+    );
+
   private handleError(error: HttpErrorResponse): Observable<never> {
     console.log(error);
     return throwError(`An error occurred - Error code: ${error.status}`);
