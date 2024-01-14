@@ -4,6 +4,7 @@ Simple server manager application. Functionality includes:
 - Server filerting based on status
 - Pinging server 
 - Add new server
+- Deleting server
 - Print report
 
 ## Technical Stack 
@@ -19,5 +20,9 @@ Filering servers by state
 
 Adding a new server
 ![Screenshot 2024-01-13 at 8 12 12 PM](https://github.com/eelizan1/ServerManager/assets/15695349/9ac83eea-7da0-425e-b831-f47921e3283f)
+
+Printing Report as an Excel File of the server status 
+![Screenshot 2024-01-13 at 8 14 24 PM](https://github.com/eelizan1/ServerManager/assets/15695349/68eefee1-c3e9-44f4-b402-46162f7a13e2)
+
 
 
